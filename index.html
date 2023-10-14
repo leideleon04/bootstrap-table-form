@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+</head>
+<body class="container">
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-start-date">Open Date</label>
+                        <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-end-date">Nearest Holiday</label>
+                        <input type="date" class="form-control" id="new-end-date">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-task">Rating</label>
+                        <input type="text" class="form-control" id="new-task" placeholder=".../10">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button id="add" class="btn btn-primary form-control">Create</button>
+            </div>
+        </div>
+    </div>
+
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Rating</th>
+            <th>Date Added</th>
+            <th>Open Date</th>
+            <th>Nearest Holiday</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+    <br>
+
+    <div class="reserve">
+        <div class="reserve-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-reserve-name">Reserve Name</label>
+                        <input type="text" class="form-control" id="new-reserve-name">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button id="new-reserve" class="btn btn-primary form-control">Create</button>
+            </div>
+        </div>
+    </div> <br>
+    <div id="reserve">
+
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
